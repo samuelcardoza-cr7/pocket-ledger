@@ -1,0 +1,12 @@
+import { Router } from 'express';
+import { requireAuth } from '../middleware/auth.js';
+import { asyncHandler } from '../utils/asyncHandler.js';
+import { create, list, remove, summary, update } from '../controllers/transactionController.js';
+const router = Router();
+router.use(requireAuth);
+router.get('/', asyncHandler(list));
+router.post('/', asyncHandler(create));
+router.get('/summary', asyncHandler(summary));
+router.put('/:id', asyncHandler(update));
+router.delete('/:id', asyncHandler(remove));
+export default router;
