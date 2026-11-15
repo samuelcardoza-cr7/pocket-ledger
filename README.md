@@ -12,7 +12,46 @@ A responsive personal finance tracker built around a clear monthly overview. The
 - Set a monthly spending budget and compare it with recorded expenses.
 - Delete a transaction, with ownership enforced by the API.
 - Explore a seeded sample dashboard without creating external accounts or configuring API keys.
+- Switch between light and dark themes; the choice is saved in this browser for next time.
 - Responsive navigation and charts for phone, tablet, and desktop layouts.
+
+## Live demo walkthrough
+
+Watch the short [Pocket Ledger walkthrough](docs/pocket-ledger-demo.mp4) to see the sample dashboard, charts, transaction history, budget view, and theme toggle in action. The video uses fictional sample data.
+
+## Deployment status and verification
+
+Deployment was explored on Vercel, Railway, and Render. A live deployment was not completed because the required hosting plans or resources involved paid tiers priced in USD. The project can be run locally using the instructions below.
+
+The authenticated flow was tested with a signed-in Clerk account after completing email verification through Gmail.
+
+## Screenshots
+
+These screenshots show the dashboard and core finance workflows with fictional example data.
+
+### Overview — 12-month area chart
+
+The overview summarizes balance, monthly income and spending, and budget remaining. The chart is set to the last 12 months in area mode, beside a category spending breakdown.
+
+![Pocket Ledger overview with 12-month area chart](docs/screenshots/overview-twelve-months.png)
+
+### Overview — 6-month bar chart
+
+The same dashboard can show a shorter six-month range and switch to bar chart mode to compare income with expenses month by month.
+
+![Pocket Ledger overview with 6-month bar chart](docs/screenshots/overview-six-months.png)
+
+### Transactions
+
+The transaction list shows the selected month's activity, transaction categories, dates, amounts, and controls to edit or delete a record.
+
+![Pocket Ledger transaction history](docs/screenshots/transactions.png)
+
+### Monthly budget
+
+The budget page compares spending so far with the monthly limit and breaks spending down by category.
+
+![Pocket Ledger monthly budget](docs/screenshots/monthly-budget.png)
 
 ## Project structure
 

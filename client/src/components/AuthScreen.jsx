@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { SignIn, SignUp } from '@clerk/react';
-import { ArrowRight, ChartNoAxesCombined, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ChartNoAxesCombined, Moon, ShieldCheck, Sun } from 'lucide-react';
 
 const clerkAppearance = {
   variables: { colorPrimary: '#595bcf', colorText: '#292b48', colorTextSecondary: '#777d92', borderRadius: '0.7rem', fontFamily: 'DM Sans, sans-serif' },
   elements: { cardBox: 'clerk-auth-card-box', card: 'clerk-auth-card', headerTitle: 'clerk-auth-title', headerSubtitle: 'clerk-auth-subtitle', formFieldLabel: 'clerk-auth-label', formFieldInput: 'clerk-auth-input', formButtonPrimary: 'clerk-auth-primary', footer: 'clerk-auth-footer', socialButtonsBlockButton: 'clerk-social-button' },
 };
 
-export default function AuthScreen({ clerkEnabled, onDemo }) {
+export default function AuthScreen({ clerkEnabled, onDemo, theme = 'light', onToggleTheme }) {
   const [mode, setMode] = useState('login');
   return (
     <main className="auth-page">
@@ -22,6 +22,7 @@ export default function AuthScreen({ clerkEnabled, onDemo }) {
         </div>
       </section>
       <section className="auth-main">
+        <button className="icon-btn theme-toggle auth-theme-toggle" type="button" onClick={onToggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>{theme === 'dark' ? <Sun size={18}/> : <Moon size={18}/>}</button>
         <div className="auth-mobile-brand"><a className="brand" href="#"><span className="brand-mark">p</span> pocket<span className="brand-light">ledger</span></a></div>
         <div className="auth-card">
           <div className="auth-kicker">A FRESH START, EVERY MONTH</div>

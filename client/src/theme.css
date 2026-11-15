@@ -99,6 +99,125 @@ body{background:#f7f7fb;color:#252740;font-size:15px}
   caret-color: #5555c2;
 }
 
+/* A persistent, full-app dark theme. */
+.theme-toggle{width:36px;height:36px;border:1px solid #e7e8f0;border-radius:10px;background:#fff;color:#6264c9;transition:background .18s,border-color .18s,color .18s}
+.theme-toggle:hover{background:#f2f1ff;color:#4d4fba}
+.auth-theme-toggle{position:absolute;top:24px;right:24px}
+html[data-theme="dark"]{color-scheme:dark;--ink:#f0eff8;--muted:#a8abc0;--line:#35374a;--green:#9290ff;--green-dark:#aaa8ff;--soft-green:#29283c;background:#12131b;color:#f0eff8}
+html[data-theme="dark"] body,
+html[data-theme="dark"] .app-shell,
+html[data-theme="dark"] .main-content{background:#12131b;color:#f0eff8}
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .topbar,
+html[data-theme="dark"] .panel,
+html[data-theme="dark"] .stat-card,
+html[data-theme="dark"] .modal,
+html[data-theme="dark"] .auth-main,
+html[data-theme="dark"] .auth-page{background:#1a1b27;color:#f0eff8;border-color:#303244}
+html[data-theme="dark"] .topbar{border-bottom-color:#303244}
+html[data-theme="dark"] .sidebar{box-shadow:4px 0 24px #0003}
+html[data-theme="dark"] .auth-aside{background:linear-gradient(145deg,#25243c 0%,#211f2d 55%,#242128 100%)}
+html[data-theme="dark"] .brand,
+html[data-theme="dark"] .page-heading h1,
+html[data-theme="dark"] .stat-value,
+html[data-theme="dark"] .panel-title,
+html[data-theme="dark"] .category-row strong,
+html[data-theme="dark"] .transaction-description strong,
+html[data-theme="dark"] .transaction-amount.expense,
+html[data-theme="dark"] .budget-total-row strong,
+html[data-theme="dark"] .budget-cat-head strong,
+html[data-theme="dark"] .auth-story h1,
+html[data-theme="dark"] .auth-card h2{color:#f0eff8}
+html[data-theme="dark"] .brand-light,
+html[data-theme="dark"] .workspace-label,
+html[data-theme="dark"] .eyebrow,
+html[data-theme="dark"] .breadcrumb,
+html[data-theme="dark"] .breadcrumb strong,
+html[data-theme="dark"] .sync-label,
+html[data-theme="dark"] .page-heading p,
+html[data-theme="dark"] .stat-label,
+html[data-theme="dark"] .stat-caption,
+html[data-theme="dark"] .panel-subtitle,
+html[data-theme="dark"] .chart-legend span,
+html[data-theme="dark"] .category-row span,
+html[data-theme="dark"] .transaction-description span,
+html[data-theme="dark"] .transaction-date,
+html[data-theme="dark"] .page-footer,
+html[data-theme="dark"] .result-count,
+html[data-theme="dark"] .budget-total-row span,
+html[data-theme="dark"] .budget-progress-labels,
+html[data-theme="dark"] .budget-cat-head span,
+html[data-theme="dark"] .auth-story>p,
+html[data-theme="dark"] .auth-subtitle,
+html[data-theme="dark"] .auth-legal{color:#a8abc0}
+html[data-theme="dark"] .profile-button,
+html[data-theme="dark"] .transaction-row,
+html[data-theme="dark"] .stat-foot,
+html[data-theme="dark"] .filter-bar{border-color:#303244}
+html[data-theme="dark"] .nav-link{color:#a8abc0}
+html[data-theme="dark"] .nav-link:hover,
+html[data-theme="dark"] .nav-link.selected{background:#29283e;color:#aaa8ff}
+html[data-theme="dark"] .nav-count,
+html[data-theme="dark"] .sidebar-note,
+html[data-theme="dark"] .note-icon,
+html[data-theme="dark"] .demo-banner,
+html[data-theme="dark"] .empty-icon,
+html[data-theme="dark"] .auth-mode-switch,
+html[data-theme="dark"] .segmented{background:#242536;border-color:#36384d;color:#c0c1d3}
+html[data-theme="dark"] .sidebar-note strong,
+html[data-theme="dark"] .demo-banner strong,
+html[data-theme="dark"] .empty-state strong{color:#e6e5f4}
+html[data-theme="dark"] .icon-btn{color:#b8b9cc}
+html[data-theme="dark"] .icon-btn:hover,
+html[data-theme="dark"] .theme-toggle{background:#242536;border-color:#3b3d55;color:#b0afff}
+html[data-theme="dark"] .theme-toggle:hover{background:#30304a}
+html[data-theme="dark"] .top-avatar,
+html[data-theme="dark"] .avatar{background:#353247;color:#e4b9aa}
+html[data-theme="dark"] .stat-icon.balance-icon,
+html[data-theme="dark"] .stat-icon.budget-icon,
+html[data-theme="dark"] .transaction-icon{background:#2d2b47;color:#aaa8ff}
+html[data-theme="dark"] .stat-icon.income-icon,
+html[data-theme="dark"] .transaction-icon.income{background:#26363b;color:#9ac7cb}
+html[data-theme="dark"] .stat-icon.expense-icon{background:#3b2c2b;color:#f0a38c}
+html[data-theme="dark"] .subtle-select,
+html[data-theme="dark"] .search-box,
+html[data-theme="dark"] .filter-selects label,
+html[data-theme="dark"] .outline-btn,
+html[data-theme="dark"] .form input,
+html[data-theme="dark"] .form select,
+html[data-theme="dark"] .demo-btn{background:#20212e;color:#e9e8f4;border-color:#383a4f}
+html[data-theme="dark"] .form input::placeholder,
+html[data-theme="dark"] .search-box input::placeholder{color:#777b94}
+html[data-theme="dark"] .form input:focus,
+html[data-theme="dark"] .form select:focus{border-color:#8987ed;box-shadow:0 0 0 3px #7775dd24}
+html[data-theme="dark"] .form label,
+html[data-theme="dark"] .search-box input,
+html[data-theme="dark"] .filter-selects select,
+html[data-theme="dark"] .filter-selects input{color:#d6d5e5}
+html[data-theme="dark"] select option{background:#20212e;color:#e9e8f4}
+html[data-theme="dark"] .segmented button.active{background:#35344d;color:#eae9fa;box-shadow:none}
+html[data-theme="dark"] .budget-progress,
+html[data-theme="dark"] .budget-cat-bar{background:#303143}
+html[data-theme="dark"] .auth-card .form input{background:#20212e}
+html[data-theme="dark"] .auth-kicker,
+html[data-theme="dark"] .auth-story .eyebrow,
+html[data-theme="dark"] .story-points{color:#aaa8ff}
+html[data-theme="dark"] .demo-btn:hover,
+html[data-theme="dark"] .outline-btn:hover{background:#2b2c3e}
+html[data-theme="dark"] .clerk-auth-wrap .clerk-auth-label,
+html[data-theme="dark"] .clerk-auth-wrap .cl-formFieldLabel{color:#d9d8e9!important}
+html[data-theme="dark"] .clerk-auth-wrap .clerk-auth-input,
+html[data-theme="dark"] .clerk-auth-wrap .cl-formFieldInput{background:#20212e!important;border-color:#383a4f!important;color:#f0eff8!important}
+html[data-theme="dark"] .clerk-auth-wrap input:-webkit-autofill,
+html[data-theme="dark"] .clerk-auth-wrap input:-webkit-autofill:hover,
+html[data-theme="dark"] .clerk-auth-wrap input:-webkit-autofill:focus{-webkit-box-shadow:0 0 0 1000px #20212e inset!important;-webkit-text-fill-color:#f0eff8!important}
+html[data-theme="dark"] .clerk-auth-wrap .clerk-auth-card-box,
+html[data-theme="dark"] .clerk-auth-wrap .cl-cardBox{background:#1a1b27!important;border-color:#303244!important;box-shadow:0 18px 48px #0004!important}
+html[data-theme="dark"] .recharts-tooltip-wrapper>div{background:#20212e!important;border-color:#3b3d50!important;color:#f0eff8!important}
+html[data-theme="dark"] .recharts-tooltip-wrapper span{color:#e2e1f0!important}
+html[data-theme="dark"] .auth-art .art-card-front{box-shadow:0 18px 42px #0005}
+@media(prefers-reduced-motion:no-preference){body,.sidebar,.topbar,.panel,.stat-card,.modal,.auth-page,.auth-aside{transition:background-color .2s ease,border-color .2s ease,color .2s ease}}
+
 /* Keep a deliberate sign-in card and give each label/input pair room to breathe. */
 .clerk-auth-wrap .clerk-auth-card-box,
 .clerk-auth-wrap .cl-cardBox {
